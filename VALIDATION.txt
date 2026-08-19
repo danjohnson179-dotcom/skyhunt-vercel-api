@@ -1,0 +1,19 @@
+SKYHUNT VERCEL OPENSKY API VALIDATION
+=====================================
+
+Validated: 19 August 2026
+
+PASS - Node.js ES-module JavaScript syntax
+PASS - Vercel Functions in the /api directory
+PASS - Root rewrites for /health, /point and /hex
+PASS - OpenSky OAuth2 client-credentials request matches official documentation
+PASS - Credentials are read only from server-side environment variables
+PASS - Token reuse and expiry safety margin
+PASS - Authenticated OpenSky /states/all bounding-box request
+PASS - OpenSky state vectors converted into SKYHUNT aircraft records
+PASS - Circular radius filtering after bounding-box retrieval
+PASS - 10-second Vercel CDN cache header
+PASS - Input validation and restricted CORS
+
+Live OpenSky and Vercel connectivity must be tested after the user adds their
+private credentials and completes deployment.
